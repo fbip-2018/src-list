@@ -12,6 +12,7 @@ public class LinkedList {
 		list.addAtIndex("LKM", 2);
 		list.removeAtIndex(-1);
 		list.removeTail();
+		list.removeHead();
 		
 		list.printList();
 
@@ -86,6 +87,13 @@ public class LinkedList {
 		}
 		
 		temp.next = null;
+	}
+	
+	
+	public void removeHead(){
+		
+		head = head.next;
+		
 	}
 	
 	public int find(Node n){
